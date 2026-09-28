@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axertiva - Certificados SSL Profissionais com Emissão Instantânea</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        },
+                        trust: {
+                            50: '#ecfdf5',
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <div class="bg-brand-900 text-white text-xs sm:text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-headset text-trust-500 mr-1"></i> Suporte 24/7/365 | axertiva.com.br</span>
+                <span class="hidden md:inline">|</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-location-dot text-trust-500 mr-1"></i> Lorena, SP - Brasil</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#faq" class="hover:text-trust-400 transition">Central de Ajuda</a>
+                <span>|</span>
+                <a href="#contato" class="hover:text-trust-400 transition"><i class="fa-solid fa-user mr-1"></i> Área do Cliente</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="bg-brand-600 text-white p-2.5 rounded-xl flex items-center justify-center shadow-md">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-extrabold tracking-tight text-brand-900">Axertiva</span>
+                        <span class="block text-[10px] text-slate-500 font-semibold tracking-widest uppercase">Certificados SSL & Segurança</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#produtos" class="font-medium text-slate-700 hover:text-brand-600 transition">Certificados SSL</a>
+                    <a href="#marcas" class="font-medium text-slate-700 hover:text-brand-600 transition">Marcas</a>
+                    <a href="#comparativo" class="font-medium text-slate-700 hover:text-brand-600 transition">Comparativo</a>
+                    <a href="#avaliacoes" class="font-medium text-slate-700 hover:text-brand-600 transition">Avaliações</a>
+                    <a href="#faq" class="font-medium text-slate-700 hover:text-brand-600 transition">FAQ</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="#produtos" class="bg-trust-600 hover:bg-trust-500 text-white font-semibold px-5 py-2.5 rounded-lg shadow-sm transition flex items-center gap-2">
+                        <i class="fa-solid fa-cart-shopping"></i> Proteger Site
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-slate-700 hover:text-brand-600 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#produtos" class="block font-medium text-slate-700 hover:text-brand-600 py-2">Certificados SSL</a>
+            <a href="#marcas" class="block font-medium text-slate-700 hover:text-brand-600 py-2">Marcas</a>
+            <a href="#comparativo" class="block font-medium text-slate-700 hover:text-brand-600 py-2">Comparativo</a>
+            <a href="#avaliacoes" class="block font-medium text-slate-700 hover:text-brand-600 py-2">Avaliações</a>
+            <a href="#faq" class="block font-medium text-slate-700 hover:text-brand-600 py-2">FAQ</a>
+            <div class="pt-2">
+                <a href="#produtos" class="w-full text-center block bg-trust-600 hover:bg-trust-500 text-white font-semibold px-5 py-2.5 rounded-lg shadow transition">
+                    Contratar Agora
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative bg-gradient-to-br from-brand-900 via-brand-700 to-sky-900 text-white py-20 lg:py-28 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-medium border border-white/20">
+                        <span class="w-2.5 h-2.5 rounded-full bg-trust-500 animate-pulse"></span>
+                        Emissão Instantânea em Menos de 5 Minutos pela Axertiva
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Segurança Confiável e Criptografia Avançada com a <span class="text-trust-400">Axertiva</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto lg:mx-0 font-light">
+                        Proteja dados de clientes, elimine avisos de site não seguro nos navegadores e impulsione suas conversões com certificados SSL das maiores autoridades globais.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#produtos" class="w-full sm:w-auto bg-trust-600 hover:bg-trust-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-3 text-lg">
+                            <i class="fa-solid fa-shield-check"></i> Ver Planos SSL
+                        </a>
+                        <a href="#comparativo" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl backdrop-blur border border-white/20 transition flex items-center justify-center gap-2 text-lg">
+                            Comparar Opções <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                    </div>
+                    <!-- Trust badges row -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-white/10 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl font-bold text-trust-400">99.9%</div>
+                            <div class="text-xs text-slate-300">Compatibilidade Total</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-trust-400">256-bit</div>
+                            <div class="text-xs text-slate-300">Criptografia de Ponta</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-trust-400">24/7</div>
+                            <div class="text-xs text-slate-300">Suporte Especializado</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Box -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-3xl shadow-2xl text-white space-y-6">
+                        <div class="flex items-center justify-between pb-4 border-b border-white/10">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+                                <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
+                                <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+                            </div>
+                            <span class="text-xs text-slate-300 bg-black/20 px-3 py-1 rounded-full"><i class="fa-solid fa-lock text-trust-400 mr-1"></i> https://axertiva.com.br</span>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-trust-500/20 border border-trust-500/40 p-4 rounded-xl flex items-center gap-3">
+                                <i class="fa-solid fa-shield-check text-trust-400 text-3xl"></i>
+                                <div>
+                                    <h4 class="font-bold text-sm">Domínio Seguro Ativado</h4>
+                                    <p class="text-xs text-slate-300">Identidade validada com selo oficial Axertiva.</p>
+                                </div>
+                            </div>
+                            <div class="space-y-2 text-sm text-slate-200">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-trust-400"></i>
+                                    <span>Selo de site seguro gratuito</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-trust-400"></i>
+                                    <span>Reemissões ilimitadas grátis</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-trust-400"></i>
+                                    <span>Proteção contra phishing e fraudes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-2">
+                            <a href="#produtos" class="block w-full text-center bg-white text-slate-900 font-bold py-3 rounded-xl hover:bg-slate-100 transition shadow">
+                                Proteger Meu Domínio Agora
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="marcas" class="py-12 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-8">Parceiro Oficial das Maiores Autoridades Certificadoras do Mundo</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center opacity-80 grayscale hover:grayscale-0 transition duration-300">
+                <div class="flex items-center justify-center p-4 bg-slate-50 rounded-xl border border-slate-100 font-extrabold text-xl text-slate-700 tracking-wider">
+                    <i class="fa-solid fa-shield text-brand-600 mr-2"></i> SECTIGO
+                </div>
+                <div class="flex items-center justify-center p-4 bg-slate-50 rounded-xl border border-slate-100 font-extrabold text-xl text-slate-700 tracking-wider">
+                    <i class="fa-solid fa-certificate text-blue-600 mr-2"></i> DIGICERT
+                </div>
+                <div class="flex items-center justify-center p-4 bg-slate-50 rounded-xl border border-slate-100 font-extrabold text-xl text-slate-700 tracking-wider">
+                    <i class="fa-solid fa-globe text-emerald-600 mr-2"></i> GEOTRUST
+                </div>
+                <div class="flex items-center justify-center p-4 bg-slate-50 rounded-xl border border-slate-100 font-extrabold text-xl text-slate-700 tracking-wider">
+                    <i class="fa-solid fa-bolt text-indigo-600 mr-2"></i> RAPIDSSL
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Escolha o Certificado SSL Ideal para a Axertiva</h2>
+                <p class="text-slate-600 text-lg">Soluções sob medida para domínios únicos, subdomínios em lote (Wildcard), validação corporativa (EV) e múltiplos domínios (SAN).</p>
+                
+                <!-- Category Tabs -->
+                <div class="flex flex-wrap justify-center gap-2 pt-6">
+                    <button onclick="switchTab('dv')" id="btn-dv" class="tab-btn px-5 py-2.5 rounded-full font-semibold text-sm transition bg-brand-600 text-white shadow-md">
+                        Validação de Domínio (DV)
+                    </button>
+                    <button onclick="switchTab('wildcard')" id="btn-wildcard" class="tab-btn px-5 py-2.5 rounded-full font-semibold text-sm transition bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">
+                        Wildcard (Subdomínios)
+                    </button>
+                    <button onclick="switchTab('ev')" id="btn-ev" class="tab-btn px-5 py-2.5 rounded-full font-semibold text-sm transition bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">
+                        Validação Estendida (EV)
+                    </button>
+                    <button onclick="switchTab('san')" id="btn-san" class="tab-btn px-5 py-2.5 rounded-full font-semibold text-sm transition bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">
+                        Multi-Domain (SAN)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Content: DV -->
+            <div id="tab-dv" class="product-tab-content grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-3xl shadow-md border border-slate-200 p-8 flex flex-col justify-between relative hover:shadow-xl transition">
+                    <div>
+                        <div class="text-xs font-bold text-brand-600 uppercase tracking-wider mb-2">Entrada / Blog</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-1">Essential SSL</h3>
+                        <p class="text-slate-500 text-sm mb-6">Ideal para blogs e portfólios pessoais.</p>
+                        <div class="mb-6 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <span class="text-xs text-slate-500 block">A partir de</span>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-3xl font-extrabold text-slate-900">R$ 49</span>
+                                <span class="text-slate-500 text-sm">/ano</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> 1 Domínio (www e não-www)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Emissão expressa em 5 min</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Criptografia 256-bit</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Selo Axertiva Seguro incluso</li>
+                        </ul>
+                    </div>
+                    <a href="#comprar" onclick="openCheckout('Essential SSL', 'R$ 49/ano')" class="w-full text-center bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 rounded-xl shadow transition">
+                        Contratar Agora
+                    </a>
+                </div>
+
+                <!-- Card 2 (Featured) -->
+                <div class="bg-white rounded-3xl shadow-xl border-2 border-brand-600 p-8 flex flex-col justify-between relative hover:shadow-2xl transition transform md:-translate-y-2">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-600 text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow">
+                        Mais Popular
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-brand-600 uppercase tracking-wider mb-2">Empresas & Lojas</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-1">PositiveSSL DV</h3>
+                        <p class="text-slate-500 text-sm mb-6">Perfeito para e-commerces e portais corporativos.</p>
+                        <div class="mb-6 bg-brand-50 p-4 rounded-2xl border border-brand-100">
+                            <span class="text-xs text-brand-700 block">A partir de</span>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-3xl font-extrabold text-brand-900">R$ 79</span>
+                                <span class="text-slate-500 text-sm">/ano</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> 1 Domínio Protegido</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Validação automática DNS/Email</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Garantia de US$ 50.000</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Suporte Prioritário 24/7</li>
+                        </ul>
+                    </div>
+                    <a href="#comprar" onclick="openCheckout('PositiveSSL DV', 'R$ 79/ano')" class="w-full text-center bg-trust-600 hover:bg-trust-500 text-white font-bold py-3.5 rounded-xl shadow-lg transition">
+                        Contratar Agora
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-3xl shadow-md border border-slate-200 p-8 flex flex-col justify-between relative hover:shadow-xl transition">
+                    <div>
+                        <div class="text-xs font-bold text-brand-600 uppercase tracking-wider mb-2">Alta Garantia</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-1">GeoTrust DV</h3>
+                        <p class="text-slate-500 text-sm mb-6">Marca global com altíssimo reconhecimento.</p>
+                        <div class="mb-6 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <span class="text-xs text-slate-500 block">A partir de</span>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-3xl font-extrabold text-slate-900">R$ 149</span>
+                                <span class="text-slate-500 text-sm">/ano</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Compatível em 99.9% browsers</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Selo dinâmico True Site</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Garantia estendida</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Reemissões ilimitadas</li>
+                        </ul>
+                    </div>
+                    <a href="#comprar" onclick="openCheckout('GeoTrust DV', 'R$ 149/ano')" class="w-full text-center bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 rounded-xl shadow transition">
+                        Contratar Agora
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tab Content: Wildcard -->
+            <div id="tab-wildcard" class="product-tab-content hidden grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-3xl shadow-md border border-slate-200 p-8 flex flex-col justify-between relative hover:shadow-xl transition">
+                    <div>
+                        <div class="text-xs font-bold text-brand-600 uppercase tracking-wider mb-2">Subdomínios Ilimitados</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-1">Wildcard Essential</h3>
+                        <p class="text-slate-500 text-sm mb-6">Proteja *.seudominio.com (loja, blog, painel) num único certificado.</p>
+                        <div class="mb-6 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                            <span class="text-xs text-slate-500 block">A partir de</span>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-3xl font-extrabold text-slate-900">R$ 289</span>
+                                <span class="text-slate-500 text-sm">/ano</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Subdomínios ilimitados inclusos</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Criptografia SSL 256-bit</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Instalação em servidores livres</li>
+                        </ul>
+                    </div>
+                    <a href="#comprar" onclick="openCheckout('Wildcard Essential', 'R$ 289/ano')" class="w-full text-center bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 rounded-xl shadow transition">
+                        Contratar Agora
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-xl border-2 border-brand-600 p-8 flex flex-col justify-between relative hover:shadow-2xl transition">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-600 text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow">
+                        Recomendado
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-brand-600 uppercase tracking-wider mb-2">Wildcard Premium</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-1">Sectigo Wildcard SSL</h3>
+                        <p class="text-slate-500 text-sm mb-6">Segurança robusta para empresas com múltiplos subdomínios.</p>
+                        <div class="mb-6 bg-brand-50 p-4 rounded-2xl border border-brand-100">
+                            <span class="text-xs text-brand-700 block">A partir de</span>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-3xl font-extrabold text-brand-900">R$ 449</span>
+                                <span class="text-slate-500 text-sm">/ano</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Todos subdomínios protegidos</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Emissão prioritária</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Garantia global US$ 500.000</li>
+                        </ul>
+                    </div>
+                    <a href="#comprar" onclick="openCheckout('Sectigo Wildcard SSL', 'R$ 449/ano')" class="w-full text-center bg-trust-600 hover:bg-trust-500 text-white font-bold py-3.5 rounded-xl shadow-lg transition">
+                        Contratar Agora
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tab Content: EV -->
+            <div id="tab-ev" class="product-tab-content hidden grid grid-cols-1 md:grid-cols-1 gap-8 max-w-lg mx-auto">
+                <div class="bg-white rounded-3xl shadow-xl border-2 border-brand-600 p-8 flex flex-col justify-between relative hover:shadow-2xl transition">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-trust-600 text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow">
+                        Máxima Confiança
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-brand-600 uppercase tracking-wider mb-2">Validação Estendida</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-1">Sectigo EV SSL</h3>
+                        <p class="text-slate-500 text-sm mb-6">Exibe o nome da sua empresa validado para máxima conversão em vendas e extrema credibilidade.</p>
+                        <div class="mb-6 bg-brand-50 p-4 rounded-2xl border border-brand-100">
+                            <span class="text-xs text-brand-700 block">A partir de</span>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-3xl font-extrabold text-brand-900">R$ 699</span>
+                                <span class="text-slate-500 text-sm">/ano</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Validação rigorosa da empresa (CNPJ)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Aumento drástico na confiança</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Garantia de US$ 1.000.000</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Suporte técnico dedicado VIP</li>
+                        </ul>
+                    </div>
+                    <a href="#comprar" onclick="openCheckout('Sectigo EV SSL', 'R$ 699/ano')" class="w-full text-center bg-trust-600 hover:bg-trust-500 text-white font-bold py-3.5 rounded-xl shadow-lg transition">
+                        Contratar Agora
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tab Content: SAN -->
+            <div id="tab-san" class="product-tab-content hidden grid grid-cols-1 md:grid-cols-1 gap-8 max-w-lg mx-auto">
+                <div class="bg-white rounded-3xl shadow-xl border-2 border-brand-600 p-8 flex flex-col justify-between relative hover:shadow-2xl transition">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-600 text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow">
+                        Múltiplos Domínios
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-brand-600 uppercase tracking-wider mb-2">Multi-Domain SAN SSL</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-1">Sectigo Multi-Domain SAN</h3>
+                        <p class="text-slate-500 text-sm mb-6">Gerencie até 250 domínios e subdomínios diferentes sob um único certificado centralizado.</p>
+                        <div class="mb-6 bg-brand-50 p-4 rounded-2xl border border-brand-100">
+                            <span class="text-xs text-brand-700 block">A partir de</span>
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-3xl font-extrabold text-slate-900">R$ 520</span>
+                                <span class="text-slate-500 text-sm">/ano</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Protege múltiplos domínios (SAN)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Economia e facilidade de gestão</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-trust-500"></i> Emissão instantânea DV</li>
+                        </ul>
+                    </div>
+                    <a href="#comprar" onclick="openCheckout('Sectigo Multi-Domain SAN', 'R$ 520/ano')" class="w-full text-center bg-trust-600 hover:bg-trust-500 text-white font-bold py-3.5 rounded-xl shadow-lg transition">
+                        Contratar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparativo" class="py-20 bg-white border-t border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Comparativo Detalhado de Certificados</h2>
+                <p class="text-slate-600 text-lg">Compare rapidamente os recursos oferecidos por cada modalidade de segurança.</p>
+            </div>
+
+            <div class="bg-slate-50 rounded-3xl shadow-md border border-slate-200 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-brand-900 text-white">
+                                <th class="p-5 font-bold">Recursos</th>
+                                <th class="p-5 font-bold text-center">Domínio Único (DV)</th>
+                                <th class="p-5 font-bold text-center">Wildcard</th>
+                                <th class="p-5 font-bold text-center">Validação Estendida (EV)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 text-sm text-slate-700">
+                            <tr class="hover:bg-white transition">
+                                <td class="p-5 font-semibold text-slate-900">Ideal Para</td>
+                                <td class="p-5 text-center">Blogs, Portais, Sites Pessoais</td>
+                                <td class="p-5 text-center">Múltiplos Subdomínios (*.dominio)</td>
+                                <td class="p-5 text-center">Lojas Virtuais, Bancos, Empresas</td>
+                            </tr>
+                            <tr class="hover:bg-white transition">
+                                <td class="p-5 font-semibold text-slate-900">Tipo de Validação</td>
+                                <td class="p-5 text-center">Apenas Domínio (Email/DNS)</td>
+                                <td class="p-5 text-center">Apenas Domínio (Email/DNS)</td>
+                                <td class="p-5 text-center">Empresa Completa (CNPJ/Documentos)</td>
+                            </tr>
+                            <tr class="hover:bg-white transition">
+                                <td class="p-5 font-semibold text-slate-900">Cadeado HTTPS Seguro</td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-check text-trust-500 text-lg"></i></td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-check text-trust-500 text-lg"></i></td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-check text-trust-500 text-lg"></i></td>
+                            </tr>
+                            <tr class="hover:bg-white transition">
+                                <td class="p-5 font-semibold text-slate-900">Criptografia</td>
+                                <td class="p-5 text-center">Até 256-bit</td>
+                                <td class="p-5 text-center">Até 256-bit</td>
+                                <td class="p-5 text-center">Até 256-bit</td>
+                            </tr>
+                            <tr class="hover:bg-white transition">
+                                <td class="p-5 font-semibold text-slate-900">Tempo de Emissão</td>
+                                <td class="p-5 text-center">5 Minutos</td>
+                                <td class="p-5 text-center">5 Minutos</td>
+                                <td class="p-5 text-center">1 a 3 Dias Úteis</td>
+                            </tr>
+                            <tr class="hover:bg-white transition">
+                                <td class="p-5 font-semibold text-slate-900">Selo Axertiva Grátis</td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-check text-trust-500 text-lg"></i></td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-check text-trust-500 text-lg"></i></td>
+                                <td class="p-5 text-center"><i class="fa-solid fa-check text-trust-500 text-lg"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="avaliacoes" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">O Que Nossos Clientes Dizem</h2>
+                <p class="text-slate-600 text-lg">Empresas de todo o Brasil confiam na Axertiva para garantir a segurança de seus domínios.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="flex text-amber-400 gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        "Excelente atendimento! Comprei o certificado Wildcard para minha agência e a emissão foi instantânea. Suporte nota 10."
+                    </p>
+                    <div class="pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-100 text-brand-700 font-bold rounded-full flex items-center justify-center">RC</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900">Rodrigo Carvalho</h4>
+                            <span class="text-xs text-slate-500">Diretor de Tecnologia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="flex text-amber-400 gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        "Economizei muito comparado ao valor cobrado direto na certificadora. Além disso, o suporte me ajudou na instalação no cPanel."
+                    </p>
+                    <div class="pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-trust-50 text-trust-600 font-bold rounded-full flex items-center justify-center">MS</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900">Mariana Souza</h4>
+                            <span class="text-xs text-slate-500">Gerente de E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="flex text-amber-400 gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        "Profissionalismo impecável. A Axertiva facilitou todo o processo de validação de domínio da nossa empresa. Recomendo demais!"
+                    </p>
+                    <div class="pt-4 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-indigo-50 text-indigo-600 font-bold rounded-full flex items-center justify-center">FA</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-900">Felipe Azevedo</h4>
+                            <span class="text-xs text-slate-500">Fundador de Startup</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Perguntas Frequentes</h2>
+                <p class="text-slate-600 text-lg">Tire suas dúvidas sobre instalação, validação e funcionamento dos certificados SSL.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden shadow-sm bg-slate-50">
+                    <button onclick="toggleFaq(1)" class="w-full flex justify-between items-center p-6 text-left font-bold text-slate-900 hover:text-brand-600 transition">
+                        <span>O que é um Certificado SSL e por que meu site precisa dele?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-200 pt-4">
+                        SSL criptografa os dados transmitidos entre o navegador do usuário e o seu servidor. Ele é obrigatório para evitar o aviso de "Não Seguro" nos navegadores e melhora o ranqueamento SEO no Google.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden shadow-sm bg-slate-50">
+                    <button onclick="toggleFaq(2)" class="w-full flex justify-between items-center p-6 text-left font-bold text-slate-900 hover:text-brand-600 transition">
+                        <span>Quanto tempo demora para o certificado ser emitido pela Axertiva?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-200 pt-4">
+                        Para certificados DV (Domínio), a emissão é totalmente automatizada e leva de 3 a 5 minutos. Para certificados EV ou OV, o processo exige verificação de CNPJ e documentos da empresa.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden shadow-sm bg-slate-50">
+                    <button onclick="toggleFaq(3)" class="w-full flex justify-between items-center p-6 text-left font-bold text-slate-900 hover:text-brand-600 transition">
+                        <span>Como é feita a instalação no servidor de hospedagem?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-200 pt-4">
+                        Fornecemos o arquivo CRT, chave privada e bundle intermediário. Você pode instalar facilmente em painéis como cPanel, Plesk ou solicitar suporte gratuito à nossa equipe técnica.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden shadow-sm bg-slate-50">
+                    <button onclick="toggleFaq(4)" class="w-full flex justify-between items-center p-6 text-left font-bold text-slate-900 hover:text-brand-600 transition">
+                        <span>O que é um Certificado SSL Wildcard?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-content-4" class="hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-200 pt-4">
+                        O Wildcard protege o domínio principal e um número ilimitado de subdomínios (ex: *.axertiva.com.br) com um único certificado.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-900 text-slate-300 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-12 border-b border-white/10">
+                <!-- Col 1: Brand & Address -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-brand-600 text-white p-2 rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-shield-halved text-lg"></i>
+                        </div>
+                        <span class="text-2xl font-extrabold text-white">Axertiva</span>
+                    </div>
+                    <p class="text-sm text-slate-400 max-w-sm">
+                        Sua solução completa e confiável em certificados SSL das principais autoridades certificadoras globais, unindo segurança e suporte humano.
+                    </p>
+                    <div class="text-xs text-slate-400 space-y-1 pt-2">
+                        <p><i class="fa-solid fa-location-dot text-trust-400 mr-2"></i> Rua Tenente Wlademar Junquetti 220</p>
+                        <p class="pl-5">Lorena, São Paulo - CEP 12610-225</p>
+                        <p><i class="fa-solid fa-globe text-trust-400 mr-2"></i> axertiva.com.br</p>
+                    </div>
+                </div>
+
+                <!-- Col 2: Produtos -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-base">Produtos SSL</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#produtos" class="hover:text-trust-400 transition">Domínio Único (DV)</a></li>
+                        <li><a href="#produtos" class="hover:text-trust-400 transition">Wildcard SSL</a></li>
+                        <li><a href="#produtos" class="hover:text-trust-400 transition">Validação Estendida (EV)</a></li>
+                        <li><a href="#produtos" class="hover:text-trust-400 transition">Multi-Domain SAN</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Marcas -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-base">Marcas</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#marcas" class="hover:text-trust-400 transition">Sectigo</a></li>
+                        <li><a href="#marcas" class="hover:text-trust-400 transition">DigiCert</a></li>
+                        <li><a href="#marcas" class="hover:text-trust-400 transition">GeoTrust</a></li>
+                        <li><a href="#marcas" class="hover:text-trust-400 transition">RapidSSL</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Suporte -->
+                <div class="space-y-4">
+                    <h4 class="text-white font-bold text-base">Atendimento</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#faq" class="hover:text-trust-400 transition">Central de Ajuda</a></li>
+                        <li><a href="#faq" class="hover:text-trust-400 transition">Geração de CSR</a></li>
+                        <li><a href="#faq" class="hover:text-trust-400 transition">Suporte Técnico 24/7</a></li>
+                        <li><a href="#faq" class="hover:text-trust-400 transition">Política de Reembolso</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+                <p>&copy; 2026 axertiva.com.br. Todos os direitos reservados. Rua Tenente Wlademar Junquetti 220, Lorena, SP - CEP 12610-225.</p>
+                <div class="flex items-center gap-6">
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-shield text-trust-400"></i> Pagamento Seguro</span>
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-lock text-trust-400"></i> SSL 256-bit</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Checkout Modal Simulation -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-8 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeCheckout()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-600 text-xl font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 bg-trust-50 text-trust-600 rounded-2xl flex items-center justify-center text-xl mx-auto mb-3 shadow-inner">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <h3 class="text-2xl font-extrabold text-slate-900">Finalizar Pedido Axertiva</h3>
+                <p class="text-slate-500 text-sm mt-1">Você selecionou o certificado:</p>
+                <div id="modal-product-name" class="font-bold text-brand-600 text-lg mt-1"></div>
+                <div id="modal-product-price" class="text-2xl font-extrabold text-slate-900 mt-2"></div>
+            </div>
+
+            <form onsubmit="handleCheckoutSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Seu Domínio</label>
+                    <input type="text" required placeholder="ex: seudominio.com.br" class="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-600">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">E-mail para Recebimento</label>
+                    <input type="email" required placeholder="seu@email.com" class="w-full border border-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-600">
+                </div>
+                <button type="submit" class="w-full bg-trust-600 hover:bg-trust-500 text-white font-bold py-3.5 rounded-xl shadow-lg transition">
+                    Prosseguir para Pagamento Seguro
+                </button>
+            </form>
+            <div id="checkout-success" class="hidden mt-4 p-4 bg-trust-50 border border-trust-200 text-trust-700 rounded-xl text-center text-sm font-semibold">
+                <i class="fa-solid fa-circle-check mr-1"></i> Pedido registrado com sucesso! Redirecionando para pagamento...
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Tab Switching for Pricing Section
+        function switchTab(tabName) {
+            // Hide all contents
+            document.querySelectorAll('.product-tab-content').forEach(el => {
+                el.classList.add('hidden');
+            });
+            // Reset all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-600', 'text-white', 'shadow-md');
+                btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200', 'hover:bg-slate-100');
+            });
+
+            // Show target content
+            document.getElementById('tab-' + tabName).classList.remove('hidden');
+
+            // Style active button
+            const activeBtn = document.getElementById('btn-' + tabName);
+            activeBtn.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200', 'hover:bg-slate-100');
+            activeBtn.classList.add('bg-brand-600', 'text-white', 'shadow-md');
+        }
+
+        // FAQ Accordion Toggle
+        function toggleFaq(id) {
+            const content = document.getElementById('faq-content-' + id);
+            const icon = document.getElementById('faq-icon-' + id);
+            
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Checkout Modal Functions
+        function openCheckout(productName, productPrice) {
+            document.getElementById('modal-product-name').innerText = productName;
+            document.getElementById('modal-product-price').innerText = productPrice;
+            document.getElementById('checkout-modal').classList.remove('hidden');
+            document.getElementById('checkout-success').classList.add('hidden');
+        }
+
+        function closeCheckout() {
+            document.getElementById('checkout-modal').classList.add('hidden');
+        }
+
+        function handleCheckoutSubmit(event) {
+            event.preventDefault();
+            const successBox = document.getElementById('checkout-success');
+            successBox.classList.remove('hidden');
+            setTimeout(() => {
+                closeCheckout();
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
